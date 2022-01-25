@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="title">
+		Encuesta sonora
+	</h1>
+	<p id="description">
+		Aquí responderás lo que puedas escuchar o escucharás lo que puedas responder
+	</p>
+  <audio class="audio"controls>
+  <source src="http://www.htlivesight.sourceforge.net/sound/few_clouds.wav"type="audio/wav"> 
+  </audio>
+
+	<form id="survey-form">
+		<div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <br>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <br>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Edad(opcional)</label>
+      <br>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="5"
+        max="99"
+        class="form-control"
+        placeholder="Edad"
+      />
+    </div>
+
+    <div class="form-group">
+      <p>¿Qué es lo que suena?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Selecciona una fuente</option>
+        <option value="student">Un instrumento</option>
+        <option value="job">Una máquina</option>
+        <option value="learner">Un sintetizador</option>
+        <option value="preferNo">No escucho nada</option>
+        <option value="other">Otro</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>¿Cómo es ese sonido?</p>
+      <label>
+        <input
+          name="tipo-sonido"
+          value="complejo"
+          type="radio"
+          class="input-radio"
+          checked
+        />Complejo</label
+      >
+      <label>
+        <input
+          name="tipo-sonido"
+          value="agudo"
+          type="radio"
+          class="input-radio"
+        />Agudo</label
+      >
+
+      <label
+        ><input
+          name="tipo-sonido"
+          value="largo"
+          type="radio"
+          class="input-radio"
+        />Largo</label
+      >
+    </div>
+
+     <div class="form-group">
+      <p>
+        ¿Qué más escuchas?
+        (Marca todas las que escuches)
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="voces"
+          type="checkbox"
+          class="input-checkbox"
+        />Voces</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="objetos"
+          type="checkbox"
+          class="input-checkbox"
+        />Objetos</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="electrónica"
+          type="checkbox"
+          class="input-checkbox"
+        />Electrónica</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="paisajes"
+          type="checkbox"
+          class="input-checkbox"
+        />Paisajes</label
+      >
+      
+    </div>
+
+    <div class="form-group">
+      <p>¿Más sonidos?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Escribe aquí los otros sonidos que escuchas"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</body>
+</html>
+
+
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+html{
+  font-family:Viga;
+}
+	body {
+		background:linear-gradient(90deg, #111, #222, #111);
+}
+	#title {
+		color: #CCC;
+    font-size:50px;
+	}
+	#description {
+		color:#455;
+		margin-top: 1%;
+    font-size:30px;
+	}
+	.form-group {
+    display:flex;
+    flex-direction:column;
+    color: #666;
+    background-color: #333;
+    padding: 10%;
+    opacity: 80%;
+    clip-path: polygon(0 1%, 100% 30%, 100% 91%, 0 77%);
+  	}
+  #name-label{
+    font-size:30px;
+  }
+  #email-label{
+    font-size:30px;
+  }
+  #number-label{
+    font-size:30px;
+  }
+  p{
+    font-size:30px;
+  }
+   
+	.form-control{
+		background-color:transparent;
+    border-color:transparent;
+    color:#FFF;
+    animation-name: inout;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+	}
+	@keyframes inout {
+		50% {
+			color:#666;
+    }
+    }
+  #submit{
+  background-color:#222;
+  color: #CCC;
+  font-size:30px;
+ 
+  
+}
+  .audio{
+  
+  width:100%;
+}
+  #comments {
+  background: transparent;
+  border-color: transparent;
+  color:#FFF;
+  animation-name: inout;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	}
+	@keyframes inout {
+		50% {
+			color:#666;
+    }
+    }
+
+
+	
+</style>
+</html>

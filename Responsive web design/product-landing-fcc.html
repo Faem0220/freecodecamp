@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <div class="wrapper">
+    <header id="header">
+      <div class="logo">
+        <img
+          id="header-img"
+          src="https://cdn.pixabay.com/photo/2012/04/14/14/45/music-34177_960_720.png"
+          alt="Logo de marca/empresa" width="20px"/>
+          
+      </div>
+      <h2>Faem</h2>
+      
+      <nav id="nav-bar">
+        <p>
+          <a class="nav-link" href="#contenidos">Contenidos</a>
+          <a class="nav-link" href="#ejemplos">Ejemplos</a>
+          <a class="nav-link" href="#precios">Precios</a>
+        </p>
+      </nav>
+    </header>
+      
+    <section id="title">
+      <h1>Fabio A. Espejo M.</h1>
+      <h2>Talleres, clases y asesorías</h2>
+      </section>
+    
+      <div class="container">
+        <section id="contenidos">
+        <div class="grid">
+          <img class= "icon"src="https://cdn.pixabay.com/photo/2018/04/02/11/44/guitar-3283649_960_720.jpg"></img>
+          <div class="desc">
+            <h2>Música</h2>
+            <p>
+                <ul>
+                  <li>Lenguaje musical</li>
+                  <li>Guitarra</li>
+                  <li>Improvisación</li>
+  
+                </ul>
+            </p>
+          </div>
+        </div>
+        
+        
+        <div class="grid">
+          <img class= "icon"src="https://cdn.pixabay.com/photo/2017/09/04/06/30/arduino-2713093_960_720.jpg"></img>
+          <div class="desc">
+            <h2>Diseño de dispositivos interactivos</h2>
+            <p>
+              <ul>
+                  <li>Controladores MIDI</li>
+                  <li>Instalaciones</li>
+                  <li>Patchs de Pure Data</li>
+  
+                </ul>
+            </p>
+          </div>
+        </div>
+        
+        <div class="grid">
+          <img class= "icon"src="https://cdn.pixabay.com/photo/2016/04/13/15/04/music-sheet-1327003_960_720.jpg"></img>
+          <div class="desc">
+            <h2>Composición y arreglos</h2>
+            <p>
+              <ul>
+                  <li>Instrumentación</li>
+                  <li>Estrategias compositivas</li>
+                  <li>Notación</li>
+                </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      
+      <section id="ejemplos">
+        <iframe
+          id="video"
+          height="600"
+          src="https://www.youtube.com/watch?v=5ckTahYf6qE"
+          frameborder="0"
+        ></iframe>
+        <figcaption>Sesión de improvisación con instalación interactiva</figcaption>
+      </section>
+      
+      <section id="precios">
+        <div class="product" id="clase">
+          <div class="level">Clase Particular</div>
+          <h2>$5/h</h2>
+          <ol>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="taller">
+          <div class="level">Taller</div>
+          <h2>$8/h</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum </li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="asesoria">
+          <div class="level">Asesoría</div>
+          <h2>$10/h</h2>
+          <ol>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+      </section>
+      
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="Escribe tu email"
+          required
+        />
+        <input id="submit" type="submit" value="Más información" class="btn" />
+      </form>
+   
+      <footer>
+        <a class="contact"href="">Contact</a>
+        
+        <span>Faem</span>
+      </footer>
+  </div>
+    
+  
+  
+      
+
+</body>
+</html>
+
+
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+html {
+    font-size: 12px;
+    font-family:Niramit;
+    
+  }
+  body {
+    background-image:url("https://cdn.pixabay.com/photo/2018/02/18/20/29/computer-3163436_960_720.png");
+    
+    }
+  .wrapper{
+    position:relative;
+    
+    }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    
+      }
+
+
+
+  header {
+      position:fixed;
+      top:0;
+      min-height:75px;
+      padding:20px;
+      width: auto;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+		  background-color: #fff;
+      font-size: 1.3rem;
+      
+      
+	    }
+  @media (max-width:600px) {
+  	header {
+      flex-wrap: wrap;
+  		}
+	  }
+	
+    .logo {
+  		width: 20vw;
+      border:solid 2px red;
+	    }
+	  @media (max-width: 650px) {
+  	.logo {
+    	margin-top: 15px;
+    	width: 100%;
+    	position: relative;
+  		}
+	}
+	  nav {
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    
+    }
+    .nav-link{
+      text-decoration:none;
+      color:black;
+      font-size:1.8rem;
+      padding:2px;
+      }
+      a:hover{
+        font-size:19px;
+        }
+    @media (max-width: 650px) {
+  		nav {
+    		margin-top: 10px;
+    		width: 100%;
+    		display: flex;
+    		flex-direction: column;
+    		align-items: center;
+    		text-align: center;
+    		padding: 0 50px;
+  		}
+  		}
+	  #title {
+      display: flex;
+  		flex-direction: column;
+  		align-items: center;
+  		justify-content: center;
+  		text-align: center;
+      width:100%;
+      height:600px;
+  		margin-top: 50px;
+      margin-right:0px;
+      font-size:2rem;
+      background-color:#223;
+      opacity:98%;
+      }
+
+      h1{
+        color:#AAA;
+        font-size:8rem;
+        font-family:Passion One;
+        }
+      h2:hover{
+        color:#aaa;
+        }    
+    
+    #contenidos {
+      display: flex;
+      flex-direction:row;
+      justify-content: center;
+      padding-top:5%;
+      width:100%;
+      height:500px;
+      background-color: white;
+      opacity:90%;
+      
+      
+      }
+      @media (max-width:550px) {
+        #contenidos {
+        flex-direction: column;
+
+        }
+        }
+    #contenidos .icon {
+      border: solid 1px white;
+      height: 250px;
+      width: 400px;
+      padding: 5px;
+      flex-wrap: wrap;
+
+      }
+      @media (max-width: 550px) {
+        #contenidos .icon {
+        display: none;
+        }
+    #contenidos .desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2px;
+      
+      }
+      }
+    li{
+      font-size:1.4rem;
+    }
+    .grid {
+      padding:20px;
+      }
+    #ejemplos {
+      padding-top: 5%;
+      }
+    figcaption{
+      font-size:14px;
+      background-color: white;
+    }
+    #precios {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height:300px;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      justify-content: space-around;
+      }
+      @media (max-width: 550px) {
+        #precios {
+        flex-direction:column;
+        }
+        }
+    .product {
+      box-shadow: 0 5px 20px 
+          rgba(100,100,100,0.6);
+      opacity: 90%;
+      width:20%;
+      background-color:#DDD;
+      border-radius: 5%;
+      padding:10px;
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+      }
+    .level {
+      font-size: 1.8rem;
+      }
+    form {
+      display: block;
+      padding: 5px;
+      margin-top: 1%;
+      width: block;
+      margin-bottom:3%;
+      }
+    #submit{
+      margin-top: 5px;
+      }
+    footer {
+      opacity:100%;
+      position:relative;
+      min-height: 40px;
+      display: flex;
+      font-size: 1.5rem;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      background-color:#DDD;
+      }
+      .contact{
+        text-decoration:none;
+        color:black;
+        }
+</style>

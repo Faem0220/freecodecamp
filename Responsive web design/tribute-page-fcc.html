@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<main id="main">
+		<header id="title"> 
+			<h1> Buclera <em>for all</em>
+			</h1>
+			<p id="subtitle">
+				Procesamiento de señal de audio para realizar bucles
+			</p>
+		</header>
+		
+		<div id="img-div">
+			<img id="image" src="https://i.postimg.cc/gcfNpCNg/buclera.png" alt="Imagen de patch de buclera en Pure Data">
+			<figcaption id="img-caption"> Patch de buclera en Pure Data
+			</figcaption>
+		</div>
+		
+		
+		<div id="tribute-info">
+			<h2>
+			Características y funcionalidad
+			</h2>
+			<h3> 
+			¿Cómo funciona?
+			</h3>
+			<p>
+			La buclera permite grabar y reproducir distintas capas de audio superpuestas sobre una pista de audio</p>
+			<p>
+			La duración de cada pista es máximo de 120 segundos
+			</p>
+			<h3> ¿A quien va dirigida?</h3>
+			<p>
+			Va dirigida a todos los músicos, compositores e intérpretes que quieran conocer esta técnica de ejecución y composición
+			</p>
+		</div>
+		
+		<h4> Para más información:
+		<br>
+		<a id="tribute-link" href="https://puredata.info/" target="_blank">
+		Pure Data
+		</a>
+		<br>
+		<a id="tribute-link" href="https://github.com/Faem0220" target="_blank">
+		github.com/Faem0220
+		</a>
+		  </h4>
+	</main>
+
+</body>
+</html>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200&display=swap');
+
+
+html { 
+	font-size:12px;
+    font-family:Sarabun;
+	 } 
+	body {
+    background: linear-gradient( 
+			90deg, #000, #333, #000);
+			}
+	#main {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color: #AAA;
+	text-align: center;
+    font-size: 1.5rem;
+	position: relative;
+	}
+
+	#title {
+    margin-bottom:5%;
+	}
+
+	h1{ 
+		font-size: 4rem;
+		padding-top: 5%;
+		animation-name: inout;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+	}
+	@keyframes inout {
+		50% {
+			color:#BBB;
+			
+		}
+  } 
+	#subtitle {
+		
+		font-style: italic;
+		font-size: 1.5rem;
+		}
+	img {
+		max-width: 50%;
+  		max-height: 50%;
+  		display: block;
+  		height: auto;
+  		margin: auto;
+  		box-shadow: 0 10px 20px 
+					rgba(100,100,100,1);
+		border-style: solid;
+		border-color: #111;
+		}
+	#img-caption{
+		font-size: 1.3rem;
+		margin: 5px 0 50px 0;
+		}
+	
+	#tribute-info {
+		border-style: solid;
+		border-width: 1px;
+		border-color: transparent;
+		border-radius: 10px;
+		background-color: #222;
+		width: 40%;
+		height: 100%;
+		box-shadow: 0 5px 20px 
+					rgba(100,100,100,0.6);
+		padding: 2%;
+		
+	}
+	p {
+		font-size: 1.2rem;
+	}
+	#tribute-link {
+		color: #555;
+    	margin-bottom: 10px;
+    	animation-name: inout;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+	}
+	@keyframes inout {
+		50% {
+			color:#777;
+			}
+			} 
+	h4 {
+		padding-bottom: 5%;
+	}
+	a:onhover {
+    color: red;
+	}
+
+
+  
+</style>
+
